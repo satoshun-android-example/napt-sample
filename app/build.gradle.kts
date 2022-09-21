@@ -1,7 +1,7 @@
 plugins {
   id("example.android.application")
 
-  alias(libs.plugins.dagger.hilt)
+  alias(libs.plugins.anvil)
   alias(libs.plugins.kotlin.kapt)
 }
 
@@ -48,8 +48,8 @@ dependencies {
   implementation(libs.bundles.kotlin.android)
   implementation(libs.bundles.android.ui)
 
-  implementation(libs.android.dagger.hilt.android)
-  kapt(libs.android.dagger.hilt.compiler)
+  implementation(libs.dagger.core)
+  kapt(libs.dagger.compiler)
 
   testImplementation(libs.bundles.test)
 

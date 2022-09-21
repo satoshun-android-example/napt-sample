@@ -1,7 +1,10 @@
 package io.github.satoshun.example
 
 import android.app.Application
-import dagger.hilt.android.HiltAndroidApp
 
-@HiltAndroidApp
-class App : Application()
+class App : Application() {
+  override fun onCreate() {
+    super.onCreate()
+    ComponentHolder.components += DaggerAppComponent.create()
+  }
+}
