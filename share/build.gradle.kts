@@ -1,10 +1,10 @@
 plugins {
   id("example.android.library")
 
-  alias(libs.plugins.kotlin.kapt)
+  alias(libs.plugins.napt)
 }
 
 dependencies {
   implementation(libs.dagger.core)
-  kapt(libs.dagger.compiler)
+  annotationProcessor(libs.dagger.compiler)
 }

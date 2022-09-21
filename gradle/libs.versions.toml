@@ -14,6 +14,7 @@ android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 anvil = { id = "com.squareup.anvil", version = "2.4.2" }
+napt = { id = "com.sergei-lapin.napt", version = "1.16" }
 
 [libraries]
 android-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }

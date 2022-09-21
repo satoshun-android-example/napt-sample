@@ -5,6 +5,6 @@ import android.app.Application
 class App : Application() {
   override fun onCreate() {
     super.onCreate()
-    ComponentHolder.components += DaggerAppComponent.create()
+    ComponentHolder.components += DaggerAppComponentBridge.component()
   }
 }

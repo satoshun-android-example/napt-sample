@@ -8,6 +8,8 @@ import kotlin.reflect.KClass
 @MergeComponent(AppScope::class)
 interface AppComponent {
   fun inject(activity: AppActivity)
+
+  fun loggedInComponent(): LoggedInComponent
 }
 
 abstract class AppScope private constructor()
